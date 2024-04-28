@@ -1,0 +1,167 @@
+#about-us {
+    min-width: 1400px;
+
+    @media (max-width: 1040px) {
+        min-width: 100%;
+    }
+}
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 100px;
+
+    @media (max-width: 1040px) {
+        padding: 40px 20px 20px;
+    }
+}
+
+.about-us-trust-points-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    height: max-content;
+    justify-content: space-between;
+    
+
+    @media (max-width : 1040px) {
+        width: 100%;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .point {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+
+        @media (max-width: 1040px) {
+            width: 45%;
+        }
+
+        @media (max-width: 840px) {
+            width: 80%;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+            padding: 0;
+        }
+
+        ul {
+            margin: 0;
+            width: fit-content;
+            color: #EC5649;
+            font-family: Product Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px; /* 116.667% */
+        }
+
+        .point-card {
+            text-align: center;
+            padding: 40px;
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+            border-radius: 20px;
+            background: #F6C71E;
+        
+            p {
+                color: #000;
+                text-align: center;
+                font-family: Product Sans Light;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 36px; /* 150% */
+            }
+        
+            img {
+                width: 80px;
+                height: 80px;
+                min-height: 80px;
+                min-width: 80px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+}
+
+
+.about-us-why-choose-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .why-choose {
+        color: #000;
+        text-align: justify;
+        font-family: Product Sans Medium;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 116.667% */
+        margin: 0;
+    }
+
+    .point-row {
+        display: flex;
+        flex-direction: row;
+        @media (max-width: 640px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: 180px;
+            height: 180px;
+            min-height: 180px;
+            min-width: 180px;
+        }
+
+        .header {
+            color: #000;
+            text-align: justify;
+            font-family: 'Product Sans Medium';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; /* 116.667% */
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .subtext {
+            color: #000;
+            text-align: justify;
+            font-family: 'Product Sans Light';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 28px; /* 116.667% */
+            margin: 0;
+        }
+    }
+}
+
+.responsive {
+    display: flex;
+
+    @media (max-width: 390px) {
+        display: none;
+    }
+}
+
+.unresponsive {
+    display: none;
+
+    @media (max-width: 390px) {
+        display: flex;
+    }
+}

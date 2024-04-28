@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.button-primary {
+    border-radius: 25px;
+    border: none;
+    background: #EC5649;
+    color: #FFF;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(90deg, #BB2E22 0%, #EF7C3C 100%);
+    }
+}

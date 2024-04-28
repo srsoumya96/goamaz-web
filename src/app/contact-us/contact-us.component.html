@@ -1,0 +1,148 @@
+<section id="contact-us">
+    <main>
+        <div class="contact-us-container" style="overflow-x: hidden;">
+            <div class="column-1 responsive" data-aos="fade-right" data-aos-duration="1000">
+                <p class="contact-container-headers">Contact Us</p>
+                <table>
+                    <tr>
+                        <td class="contact-table-header" style="padding: 5px;"><img src="assets/icons/contact-phone.svg" height="40" width="40" /></td>
+                        <td class="contact-table-header">Phone Number :</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding: 15px 0;">
+                            +91-7908768595
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-table-header" style="padding: 5px;"><img src="assets/icons/contact-mail.svg" height="40" width="40" /></td>
+                        <td class="contact-table-header">Email Address :</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding: 15px 0;">
+                            Support@goamazcloud.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-table-header" style="padding: 5px;"><img src="assets/icons/contact-location.svg" height="40" width="40" /></td>
+                        <td class="contact-table-header">Office Address :</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="display: flex; flex-direction: row; padding: 15px 0; flex-wrap: wrap; justify-content: space-between;">
+                            <div class="address" *ngFor="let address of address">
+                                <h4>{{address.city}}</h4>
+                                <p class="description">{{address.address}}</p>
+                                <a class="desc_link" [href]="address.mapUrl" target="_blank">view on map</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="column-1 unresponsive">
+                <p class="contact-container-headers">Contact Us</p>
+                <table>
+                    <tr>
+                        <td class="contact-table-header" style="padding: 5px;"><img src="assets/icons/contact-phone.svg" height="40" width="40" /></td>
+                        <td class="contact-table-header">Phone Number :</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding: 15px 0;">
+                            +91-7908768595
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-table-header" style="padding: 5px;"><img src="assets/icons/contact-mail.svg" height="40" width="40" /></td>
+                        <td class="contact-table-header">Email Address :</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding: 15px 0;">
+                            Support@goamazcloud.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-table-header" style="padding: 5px;"><img src="assets/icons/contact-location.svg" height="40" width="40" /></td>
+                        <td class="contact-table-header">Office Address :</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="display: flex; flex-direction: row; padding: 15px 0; flex-wrap: wrap; justify-content: space-between;">
+                            <div class="address" *ngFor="let address of address">
+                                <h4>{{address.city}}</h4>
+                                <p class="description">{{address.address}}</p>
+                                <p class="desc_link">view on map</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <nz-divider nzType="vertical"></nz-divider>
+            <nz-divider nzType="horizontal"></nz-divider>
+            <div class="column-2 responsive" data-aos="fade-left" data-aos-duration="1000">
+                <p class="contact-container-headers">Send us a message</p>
+                <div class="send-message-grid">
+                    <div class="gallery_grid_item1">
+                        <p class="form-field">Full Name*</p>
+                        <input type="text" placeholder="Enter Your Full Name" />
+                    </div>
+                    <div class="gallery_grid_item2">
+                        <p class="form-field">Phone No.*</p>
+                        <input ty7pe="text" placeholder="Enter Your Contact No." />
+                    </div>
+                    <div class="gallery_grid_item3">
+                        <p class="form-field">Email Address*</p>
+                        <input type="text" placeholder="Enter Your Email Address" />
+                    </div>
+                    <div class="gallery_grid_item4">
+                        <p class="form-field">Country*</p>
+                        <input type="text" placeholder="Enter Your Country" />
+                    </div>
+                    <div class="gallery_grid_item5">
+                        <p class="form-field">Your Message*</p>
+                        <textarea placeholder="Write Your Message" ></textarea>
+                    </div>
+                    <!-- <div>
+                        <img class="gallery_grid_item1" />
+                    </div> -->
+                </div>
+                <div class="send-message-button">
+                    <button class="button-primary">Send <img src='assets/icons/arrow-forward.svg' /></button>
+                </div>
+            </div>
+            <div class="column-2 unresponsive">
+                <p class="contact-container-headers">Send us a message</p>
+                <div class="send-message-grid">
+                    <div class="gallery_grid_item1">
+                        <p class="form-field">Full Name*</p>
+                        <input type="text" placeholder="Enter Your Full Name" />
+                    </div>
+                    <div class="gallery_grid_item2">
+                        <p class="form-field">Phone No.*</p>
+                        <input ty7pe="text" placeholder="Enter Your Contact No." />
+                    </div>
+                    <div class="gallery_grid_item3">
+                        <p class="form-field">Email Address*</p>
+                        <input type="text" placeholder="Enter Your Email Address" />
+                    </div>
+                    <div class="gallery_grid_item4">
+                        <p class="form-field">Country*</p>
+                        <input type="text" placeholder="Enter Your Country" />
+                    </div>
+                    <div class="gallery_grid_item5">
+                        <p class="form-field">Your Message*</p>
+                        <textarea placeholder="Write Your Message" ></textarea>
+                    </div>
+                    <!-- <div>
+                        <img class="gallery_grid_item1" />
+                    </div> -->
+                </div>
+                <div class="send-message-button">
+                    <button class="button-primary">Send <img src='assets/icons/arrow-forward.svg' /></button>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>

@@ -1,0 +1,35 @@
+// .web-coming-soon {
+//     display: flex; justify-content: start; align-items: center;
+//     @media (max-width: 1040px) {
+//         display: none;
+//     }
+//     img {
+//         object-fit: contain;
+//     }
+// }
+
+// .mobile-coming-soon {
+//     display: none;
+//     @media (max-width: 1040px) {
+//         display: flex; justify-content: start; align-items: center;
+//     }
+//     img {
+//         object-fit: contain;
+//     }
+// }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 390px) {
+        width: 390px;
+        min-width: 390px;
+        overflow-x: auto;
+    }
+}
+
+footer {
+    margin-top: auto;
+}

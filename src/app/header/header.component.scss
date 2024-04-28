@@ -1,0 +1,136 @@
+#header {
+    border-bottom: 2px solid #EC5649;
+    margin: 0;
+    padding: 0;
+    min-width: 1400px;
+    @media (max-width: 1040px) {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+.header-container {
+    padding: 20px 80px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (max-width: 1040px) {
+        padding: 20px;
+    }
+}
+
+.logo-container {
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+
+    @media (max-width: 1040px) {
+        display: none;
+    }
+}
+
+.nav-menu-icon {
+    display: none;
+    background: #FFF;
+    border: none;
+    cursor: pointer;
+    
+    @media (max-width: 1040px) {
+        display: block;
+    }
+}
+
+.nav-menu-button {
+    position: relative;
+    cursor: pointer;
+    background: inherit;
+    color: #000;
+    font-family: 'Product Sans Medium';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    text-decoration: none;
+}
+
+.nav-menu-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #EC5649;
+    transform-origin: bottom right;
+    transition: transform 0.25s linear;
+  }
+
+  .nav-menu-button:hover {
+    color: #EC5649;
+  }
+
+.nav-menu-button:hover:not(.active)::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+.menu-options-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: absolute;
+    z-index: 1;
+    right: 40px;
+    width: 200px;
+
+    border-radius: 10px;
+    border: 0.6px solid #000;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.20);
+    
+    a {
+        display: block;
+        padding: 10px 20px;
+        color: #000;
+        font-size: 20px;
+        text-decoration: none;
+        font-family: 'Product Sans Medium';
+        font-size: 20px;
+        font-weight: 500;
+        
+        &:first-child {
+            border-radius: 10px 10px 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 0 10px 10px;
+        }
+
+        
+        &:hover {
+            background: rgba(244, 208, 81, 0.30);
+            color: #000;
+        }
+
+        &.button-active {
+            color: #000;
+            background: rgba(244, 208, 81, 0.30);
+        }
+    }
+}
+
+.active {
+  color: #EC5649;
+  border-bottom: 2px solid #EC5649;
+}
+.button-active {
+  color: #FFF;
+  background: #EC5649;
+}

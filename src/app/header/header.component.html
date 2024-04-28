@@ -1,0 +1,23 @@
+<section id="header">
+    <div class="header-container">
+        <div class="logo-container">
+            <img src="assets/icons/goamaz-logo.svg" [routerLink]="'/'" />
+        </div>
+        <div class="navbar-container" style="margin-left: auto;" (clickElseWhere)="closeNavMenu();">
+            <nav class="nav-menu">
+                <a class="nav-menu-button" [routerLink]="'/'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Home</a>
+                <a class="nav-menu-button" [routerLink]="'/about-us'" [routerLinkActive]="'active'">About Us</a>
+                <a class="nav-menu-button" [routerLink]="'/contact-us'" [routerLinkActive]="'active'">Contact Us</a>
+            </nav>
+            <button class="nav-menu-icon"><img [src]="!isMenuOptionsVisible ? 'assets/icons/nav-menu-burger.svg' : 'assets/icons/close-icon.svg'" height="40" width="40" (click)="isMenuOptionsVisible = !isMenuOptionsVisible;"/></button>
+            <ng-container *ngIf="isMenuOptionsVisible; then menuOptions"></ng-container>
+            <ng-template #menuOptions>
+                <div class="menu-options-content">
+                    <a class="" [routerLink]="'/'" [routerLinkActive]="'button-active'" [routerLinkActiveOptions]="{exact: true}" (click)="closeNavMenu();">Home</a>
+                    <a class="" [routerLink]="'/about-us'" [routerLinkActive]="'button-active'" (click)="closeNavMenu();">About Us</a>
+                    <a class="" [routerLink]="'/contact-us'" [routerLinkActive]="'button-active'" (click)="closeNavMenu();">Contact Us</a>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</section>

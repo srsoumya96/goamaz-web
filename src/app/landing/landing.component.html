@@ -1,0 +1,38 @@
+<section id="home">
+    <main>
+        <div class="landing-container">
+            <nz-carousel nzAutoPlay [nzAutoPlaySpeed]="3000" [nzDots]="false" [nzEnableSwipe]="true" [nzLoop]="true">
+                <div nz-carousel-content *ngFor="let item of items" class="container-1">
+                    <div class="landing-main-text-container-web-view" [style.background]="'url(' + item.image_src +') right no-repeat'">
+                        <p>{{item.header}}</p>
+                        <button>
+                            Explore More <img src="assets/icons/arrow-forward.svg" height="24" width="24" />
+                        </button>
+                    </div>
+                    <div class="landing-main-text-container-mobile-view">
+                        <p>{{item.header}}</p>
+                        <button class="button-primary">
+                            Explore More <img id="arrow-forward-icon" src="assets/icons/arrow-forward.svg" height="24" width="24" />
+                        </button>
+                        <img class="landing-main-image-mobile-view" [src]="item.image_src" />
+                    </div>
+                </div>
+              </nz-carousel>
+            
+            <div class="container-2" style="overflow-x: hidden;">
+                <div class="text-container">
+                    <p class="header"><span>GoAMAZ : </span><br />
+                        Committed to Elevating Healthcare Through the Fusion of Technology and Exceptional Quality.</p>
+                    <p>At GoAMAZ, we are at the forefront of transforming the healthcare industry through innovative technology solutions. Specializing in healthcare software and IT consulting, cloud database hosting, and website design and development, we bring a comprehensive approach to modernizing healthcare services. Our team combines deep industry knowledge with technical prowess to create tailored software, optimize IT strategies, ensure secure data hosting, and craft engaging online platforms. Join us in revolutionizing healthcare through the seamless integration of cutting-edge technology.
+                    </p>
+                </div>
+                <div class="image-container responsive" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="assets/images/landing-brief-container-image.png" />
+                </div>
+                <div class="image-container unresponsive">
+                    <img src="assets/images/landing-brief-container-image.png" />
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
